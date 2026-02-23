@@ -1,0 +1,20 @@
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background: linear-gradient(90deg,#f6fbff,#ffffff);
+  border-bottom:1px solid #e6eef7;
+}
+.levels{display:flex;gap:8px;align-items:center}
+.level-link{padding:8px 10px;border-radius:8px;text-decoration:none;color:#1e3a5f;background:transparent;border:1px solid transparent;transition:background-color 220ms, transform 150ms}
+.level-link:hover{transform:translateY(-2px)}
+.level-link.active{background:#e6f2ff;border-color:#bcdff7}
+.level-link.active.error{background:#fff5f5;border-color:#f5c6c6}
+.level-link.active.warn{background:#fffaf0;border-color:#f3d7b3}
+.level-link.active.debug{background:#f7f9fb;border-color:#d9e0e6}
+.level-link.active.info{background:#e6f2ff;border-color:#bcdff7}
+.nav-right{display:flex;gap:8px;align-items:center}
+.btn{padding:8px 12px;border-radius:6px;border:1px solid #cfe3f7;background:#fff;text-decoration:none;color:#1e3a5f}
+.btn-primary{background:#e6f2ff;border-color:#a6d0ff;color:#0b3a66}
+.nav-user{color:#1e3a5f;margin-right:8px}

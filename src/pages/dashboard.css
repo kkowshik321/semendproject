@@ -1,0 +1,15 @@
+.dashboard-root{display:flex;gap:16px;padding:18px}
+.dashboard-sidebar{width:260px;background:#fbfdff;border:1px solid #e6f1fb;padding:12px;border-radius:8px;height:calc(100vh - 80px);overflow:auto}
+.dashboard-main{flex:1;background:transparent}
+.dashboard-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.welcome{color:#094c7a;margin-top:6px;font-weight:600}
+.log-list{background:#fff;border-radius:8px;border:1px solid #eaf4ff;padding:8px;height:640px;transition:opacity 220ms ease, transform 220ms ease}
+.log-list.transitioning{opacity:0.6;transform:translateY(6px)}
+
+/* per-level subtle background shifts */
+.dashboard-root.level-all{background:linear-gradient(180deg,#f8fbff,#ffffff)}
+.dashboard-root.level-info{background:linear-gradient(180deg,#eef9ff,#ffffff)}
+.dashboard-root.level-warn{background:linear-gradient(180deg,#fffdf6,#ffffff)}
+.dashboard-root.level-error{background:linear-gradient(180deg,#fff5f5,#ffffff)}
+.dashboard-root.level-debug{background:linear-gradient(180deg,#f7f9fb,#ffffff)}
+.summary{color:#2b6cb0}

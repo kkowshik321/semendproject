@@ -1,0 +1,7 @@
+/* auth.css - light, friendly styles */
+.auth-page{display:flex;min-height:78vh;align-items:center;justify-content:center;background:linear-gradient(180deg,#f8fbff,#ffffff)}
+.auth-card{background:#fff;padding:22px;border-radius:10px;box-shadow:0 6px 18px rgba(12,38,70,0.06);width:340px;display:flex;flex-direction:column;gap:10px}
+.auth-card h2{margin:0 0 6px 0;color:#0b3a66}
+.auth-card label{font-size:13px;color:#29445a;display:flex;flex-direction:column}
+.auth-card input{padding:10px;border-radius:8px;border:1px solid #e3eef9;margin-top:6px}
+.auth-card .primary{background:#0b74d1;color:#fff;padding:10px;border-radius:8px;border:none;margin-top:8px}
