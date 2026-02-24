@@ -2,3 +2,8 @@
 .filter-row{display:flex;flex-direction:column;margin-bottom:12px}
 .filter-row input,.filter-row select{padding:8px;border-radius:6px;border:1px solid #d6e6f5}
 .filter-summary{margin-top:16px;color:#2b6cb0}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.card{background:#fff;border:1px solid #e6f1fb;padding:10px;border-radius:8px;text-align:center}
+.card-title{font-size:12px;color:#567}
+.card-value{font-size:18px;font-weight:700;color:#123;margin-top:6px}

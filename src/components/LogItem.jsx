@@ -5,11 +5,10 @@ export default function LogItem({log}){
   const cls = `log-item ${log.level}`
   return (
     <div className={cls} role="listitem" tabIndex={0} aria-label={`${log.level} - ${log.text}`}>
-      <div className="log-meta">
-        <div className="log-time">{new Date(log.time).toLocaleString()}</div>
-        <div className="log-level">{log.level.toUpperCase()}</div>
-      </div>
-      <div className="log-text">{log.text}</div>
+      <div className="col event">{log.event || log.text}</div>
+      <div className="col user">{(log.user && log.user.name) || 'unknown'}</div>
+      <div className="col ip">{log.ipaddress || '-'}</div>
+      <div className={`col status ${log.status==='success' ? 'success' : 'fail'}`}>{log.status}</div>
     </div>
   )
 }

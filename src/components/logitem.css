@@ -1,7 +1,12 @@
-.log-item{display:flex;flex-direction:column;padding:10px 14px;border-bottom:1px solid #eef6ff;background:#fff}
+.log-item{display:grid;grid-template-columns:2fr 1fr 1fr 120px;gap:12px;padding:10px 14px;border-bottom:1px solid #eef6ff;background:#fff;align-items:center}
 .log-item:focus{outline:2px solid #a6d0ff}
-.log-meta{display:flex;justify-content:space-between;font-size:12px;color:#5b6b7a;margin-bottom:6px}
-.log-text{font-size:14px;color:#123}
+.col{font-size:14px;color:#123}
+.col.event{font-weight:600}
+.col.user{color:#334}
+.col.ip{color:#456}
+.col.status{font-weight:700;text-transform:capitalize}
+.col.status.success{color:#16a34a}
+.col.status.fail{color:#dc2626}
 .log-item.error{background:linear-gradient(90deg,#fff5f5,#fff);border-left:4px solid #f56565}
 .log-item.warn{background:linear-gradient(90deg,#fffaf0,#fff);border-left:4px solid #dd6b20}
 .log-item.info{border-left:4px solid #4299e1}
